@@ -56,12 +56,6 @@ def about():
     """Menampilkan informasi singkat aplikasi."""
     return "Portal Login - praktikum DevSecOps CI/CD"
 
-
-@app.route("/health")
-def health():
-    """Endpoint untuk mengecek apakah aplikasi berjalan."""
-    return {"status": "ok"}
-
 if __name__ == "__main__":
     init_db()
     app.run(host="0.0.0.0", port=5000)  # nosemgrep
